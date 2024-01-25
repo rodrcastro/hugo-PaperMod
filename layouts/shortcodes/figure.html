@@ -1,3 +1,18 @@
+<!---
+    class/align - add alignment to the image
+        center - center align
+    link - adds a link to the image
+    target - adds a target like _blank
+    rel
+    src - source of the image
+    alt - alt text
+    title - add a title to the caption
+    caption - caption
+    width/height - forces width and height
+
+--->
+
+
 <figure{{ if or (.Get "class") (eq (.Get "align") "center") }} class="
            {{- if eq (.Get "align") "center" }}align-center {{ end }}
            {{- with .Get "class" }}{{ . }}{{- end }}"
